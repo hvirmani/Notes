@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notes </title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="icon" href="https://cdn2.iconfinder.com/data/icons/logistics-delivery-1-4/64/1-512.png">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="head">
+		<input type="text" id="search" onkeyup="search();" placeholder="Search...">
+		<button id="search_btn" onclick="search();"><i class="fa fa-search"></i></button>
+	</div>
+	<div class="container">
+		<div class="row" id="main_content">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="col-md-12" id="input">
+					<div>
+						<input type="text" id="input_title" placeholder="Title...">
+					</div>
+					<div>
+						<textarea id="input_content" placeholder="Add a note..."></textarea>
+					</div>
+					<div id="btn">
+						<button id="add" onclick="newNote();">+</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-lg-4 col-md-6">
+				<div class="col-md-12">
+					<div class="title">
+						Demo
+					</div>
+					<div class="content">
+						Press delete button to delete the dotes and copy button to copy the notes
+					</div>
+					<hr>
+					<div class="icon">
+						<span class="copy">
+							<i class='fas fa-copy'></i>
+						</span>
+						<span class="delete">
+							<i class='fas fa-trash-alt'></i>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>Made with❤️by <a href="https://github.com/hvirmani" target="_blank">Harshit</a></footer>
+	<script src="file.js">
+	</script>
+</body>
+
+</html>
