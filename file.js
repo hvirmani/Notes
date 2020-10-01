@@ -4,7 +4,6 @@ function search() {
 	for (l = 0; l < input_element.length; l++) {
 		let str_1 = input_element[l].textContent.trim().toLowerCase();
 		let str_2 = input_element[l].parentElement.children[1].textContent.trim().toLowerCase();
-		console.log(input + " " + str_1 + " " + str_2);
 		var a = str_1.indexOf(input);
 		var b = str_2.indexOf(input);
 		if (a > -1 || b > -1)
@@ -21,10 +20,8 @@ textarea.addEventListener('keydown', autosize);
 
 function autosize() {
 	var el = this;
-	setTimeout(function () {
-		el.style.cssText = 'height:auto; padding:0';
-		el.style.cssText = 'height:' + el.scrollHeight + 'px';
-	}, 0);
+	el.style.cssText = 'height:auto; padding:0';
+	el.style.cssText = 'height:' + el.scrollHeight + 'px';
 }
 var close = document.getElementsByClassName("delete");
 var copy = document.getElementsByClassName("copy");
